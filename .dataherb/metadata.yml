@@ -1,4 +1,4 @@
-name: "Eurostats: International quarterly road freight transport - goods loaded/unloaded in reporting country"
+name: "International quarterly road freight transport - goods loaded/unloaded in reporting country by Eurostats"
 description: "Eurostats: International quarterly road freight transport - goods loaded/unloaded in reporting country, by type of transport (1 000 t, Mio Tkm) (road_go_iq_ltt/road_go_iq_utt)"
 contributors:
 - name: 'LM'
