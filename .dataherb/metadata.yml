@@ -1,53 +1,91 @@
-name: EU Motorways Network Length
-description: The lengths of motorways in EU by NUTS 2
+name: "Eurostats: International quarterly road freight transport - goods loaded/unloaded in reporting country"
+description: "Eurostats: International quarterly road freight transport - goods loaded/unloaded in reporting country, by type of transport (1 000 t, Mio Tkm) (road_go_iq_ltt/road_go_iq_utt)"
 contributors:
 - name: 'LM'
   github: 'emptymalei'
 data:
-- name: motorway networks length in unit of km in CSV format
+- name: 'Road Freight Goods Loaded in Country in Unit of Million Tonne KM'
   description: ''
-  path: dataset/motorway_network_unit_km.csv
+  path: dataset/road_freight_goods_loaded_in_country_in_million_tonne_km.csv
   format: csv
-  size: 91K
-  updated_at: '2020-04-14'
+  size: 20M
+  updated_at: ''
   fields:
-  - name: transport_infrastructure
-    description: 'The corresponding transport infrastructure'
   - name: country
-    description: 'Country Alpha 2 Code'
-  - name: nuts_2
-    description: 'NUTS 2 Code of the region'
+    description: 'goods loaded in country alpha 2 code'
+  - name: unload_country
+    description: 'The country of unload'
+  - name: carriage
+    description: 'type of carriage'
   - name: year
     description: 'year of the measurement'
   - name: value
-    description: 'length of the motorway network'
+    description: 'million tonne-km of goods loaded'
   - name: unit
-    description: 'km, unit of length'
-- name: motorway network length per square km in EU in CSV format
+    description: 'millon tonne-km'
+- name: 'Road Freight Goods Loaded in Country in Unit of Thousand Tonnes'
   description: ''
-  path: dataset/motorway_network_unit_km_per_thousand_square_km.csv
+  path: dataset/road_freight_goods_loaded_in_country_in_thousand_tonnes.csv
   format: csv
-  size: 105K
-  updated_at: '2020-04-14'
+  size: 21M
+  updated_at: ''
   fields:
-  - name: transport_infrastructure
-    description: 'The corresponding transport infrastructure'
   - name: country
-    description: 'Country Alpha 2 Code'
-  - name: nuts_2
-    description: 'NUTS 2 Code of the region'
+    description: 'goods loaded in country alpha 2 code'
+  - name: unload_country
+    description: 'The country of unload'
+  - name: carriage
+    description: 'type of carriage'
   - name: year
     description: 'year of the measurement'
   - name: value
-    description: 'length per area of the motorway network'
+    description: 'goods loaded in thousand tonnes'
   - name: unit
-    description: 'km per thousand km, unit of length per area'
+    description: 'thousand tonnes'
+- name: 'Road Freight Goods Unloaded in Country in Unit of Million Tonne KM'
+  description: ''
+  path: dataset/road_freight_goods_unloaded_in_country_in_million_tonne_km.csv
+  format: csv
+  size: 19M
+  updated_at: ''
+  fields:
+  - name: country
+    description: 'goods unloaded in country alpha 2 code'
+  - name: load_country
+    description: 'the country code where the goods are loaded'
+  - name: carriage
+    description: 'type of carriage'
+  - name: year
+    description: 'year of the measurement'
+  - name: value
+    description: 'million tonne-km of goods loaded'
+  - name: unit
+    description: 'millon tonne-km'
+- name: 'Road Freight Goods Unloaded in Country in Unit of Thousand Tonnes'
+  description: ''
+  path: dataset/road_freight_goods_unloaded_in_country_in_thousand_tonnes.csv
+  format: csv
+  size: 19M
+  updated_at: ''
+  fields:
+  - name: country
+    description: 'goods loaded in country alpha 2 code'
+  - name: unload_country
+    description: 'The country of unload'
+  - name: carriage
+    description: 'type of carriage'
+  - name: year
+    description: 'year of the measurement'
+  - name: value
+    description: 'goods loaded in thousand tonnes'
+  - name: unit
+    description: 'thousand tonnes'
 references:
-- name: 'Raw Data: Motorways network by NUTS 2 regions (tgs00114)	@ Main Tables @ Eurostats'
-  link: 'https://ec.europa.eu/eurostat/web/transport/data/main-tables'
-- name: 'Motorways network by NUTS 2 regions (DataBrowser)'
-  link: 'https://ec.europa.eu/eurostat/databrowser/view/tgs00114/default/table?lang=en'
-- name: 'Motorways network by NUTS 2 regions (Tables, Graphs, Maps)'
-  link: 'https://ec.europa.eu/eurostat/tgm/table.do?tab=table&init=1&language=en&pcode=tgs00114&plugin=1'
-- name: 'Metadata Illustration: Regional transport statistics (reg_tran)'
-  link: 'https://ec.europa.eu/eurostat/cache/metadata/en/reg_tran_esms.htm'
+- name: 'Raw Data: International quarterly road freight transport - goods loaded in reporting country, by type of transport (1 000 t, Mio Tkm) (road_go_iq_ltt) @ Eurostats'
+  link: 'https://ec.europa.eu/eurostat/data/database?node_code=road_go_iq_ltt'
+- name: '	International quarterly road freight transport - goods unloaded in reporting country, by type of transport (1 000 t, Mio Tkm) (road_go_iq_utt) @ Eurostats'
+  link: 'https://ec.europa.eu/eurostat/data/database?node_code=road_go_iq_utt'
+- name: 'International quarterly road freight transport - goods loaded in reporting country, by type of transport (1 000 t, Mio Tkm)'
+  link: 'https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=road_go_iq_ltt&lang=en'
+- name: 'International quarterly road freight transport - goods unloaded in reporting country, by type of transport (1 000 t, Mio Tkm)'
+  link: 'https://appsso.eurostat.ec.europa.eu/nui/show.do?dataset=road_go_iq_utt&lang=en'
